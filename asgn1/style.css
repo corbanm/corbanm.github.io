@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nameText {
+    color: blue;
+}
+
+/* Only shows if smaller than 1200px */
+@media only screen and (max-width: 1200px) {
+    #screenSize {
+        opacity: 255;
+    }
+}
+
+/* Only shows if larger than 1200px */
+@media only screen and (min-width: 1200px) {
+    #screenSize {
+        opacity: 0;
+    }
+}

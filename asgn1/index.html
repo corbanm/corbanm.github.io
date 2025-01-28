@@ -4,37 +4,41 @@
     <!-- Naming the page. Shows up on the tab title-->
 <title>Corban Mechikoff</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Adding a divider for the name-->
     <div class="name">
         <!-- Heading-->
-        <h1>Corban Mechikoff</h1>
+        <h1 class="text" id="nameText">Corban Mechikoff</h1>
     </div>
     <!-- Adding a divider for the about section-->
     <div class="about">
-        <h2>About me:</h2>
+        <h2 class="text">About me:</h2>
         <ul>
-            <li>I'm from Coeur d' Alene Idaho</li>
-            <li>I am a senior year Computer Science: Cybersecurity major</li>
-            <li>I have lived in four states (Oregon, Colorado, Idaho, and Virginia)</li>
+            <li class="text">I'm from Coeur d' Alene Idaho</li>
+            <li class="text">I am a senior year Computer Science: Cybersecurity major</li>
+            <li class="text">I have lived in four states (Oregon, Colorado, Idaho, and Virginia)</li>
         </ul>
     </div>
     <div class="idea">
-        <h2>Website idea</h2>
-        <p>I would like to make an "about me" website with interactive menus, digital resume, and projects I am working on.</p>
+        <h2 class="text">Website idea</h2>
+        <p class="text">I would like to make an "about me" website with interactive menus, digital resume, and projects I am working on.</p>
         <div class="inspiration">
-            <h2>Inspiration ideas:<br></h2>
+            <h2 class="text">Inspiration ideas:<br></h2>
             <!-- Clickable inspiration screenshots that take the user to their original website in a new tab-->
             <a href="https://www.danmachado.com/" target="_blank"><img src="dan.png" style="width:47vw; border: 4px dashed black" /></a>
             <a href="https://briceclain.com/en/" target="_blank"><img src="Brice.png" style="width:47vw; border: 4px dashed black" /></a>
         </div>
-        <h1>Other ideas:</h1>
+        <h1 class="text">Other ideas:</h1>
         <form action="/#submit">
             <input type="text" name="ideaURL" id="ideaURL" placeholder="URL" />
             <input type="text" name="ideaName" id="ideaName" placeholder="Website Name" />
             <input type="button" id="ideaSubmit" value="Submit" />
         </form>
     </div>
+    <a href="../asgn2/index.html"><h1 class="text">Link to Assignment 2</h1></a>
+    <!-- CSS media queries used to display only on small screens-->
+    <h2 id="screenSize">You have a small screen</h2>
 </body>
 </html>
