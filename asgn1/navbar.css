@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.navBar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav a:hover {
+    background-color: #3a86ff;
+}

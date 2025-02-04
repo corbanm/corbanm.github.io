@@ -1,5 +1,11 @@
 body {
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding-top: 150px;
 }
 
 a {
@@ -26,4 +32,8 @@ a {
     #screenSize {
         opacity: 0;
     }
+}
+
+input, textarea {
+    margin: 10px 0px 10px 0px;
 }
