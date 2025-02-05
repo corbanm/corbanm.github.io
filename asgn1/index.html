@@ -6,6 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navbar.css">
+<script>
+    var fullscreenCount = 0;
+    var isClicked = false;
+    function fullScreen() {
+        if (isClicked == false) {
+           isClicked = true;
+           document.getElementById("fullscreenCounterText").style.visibility = "visible";
+        }
+        // Call JS event to make window fullscreen
+        document.documentElement.requestFullscreen();
+        // Increment the fullscreen counter
+        fullscreenCount++;
+        // Set the fullscreen counter text to the number of time the user has gone fullscreen
+        document.getElementById("fullscreenCounter").innerHTML = fullscreenCount;
+    }
+</script>
 </head>
 <body>
     <div class="navBar">
@@ -43,6 +59,10 @@
         </div>
         <a href="../asgn2/index.html"><h1 class="text">Link to Assignment 2</h1></a>
         <!-- CSS media queries used to display only on small screens-->
+        <button onclick="fullScreen()">
+            Fullscreen
+        </button>
+        <h2 id="fullscreenCounterText" style="visibility: hidden;">You have viewed this page in fullscreen <span id="fullscreenCounter">0</span> times.</h2>
         <h2 id="screenSize">You have a small screen</h2>
     </div>
 </body>
