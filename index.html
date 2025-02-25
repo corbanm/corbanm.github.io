@@ -6,25 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navbar.css">
-<script>
-    var fullscreenCount = 0;
-    var isClicked = false;
-    function fullScreen() {
-        if (isClicked == false) {
-           isClicked = true;
-           document.getElementById("fullscreenCounterText").style.visibility = "visible";
-        }
-        // Call JS event to make window fullscreen
-        document.documentElement.requestFullscreen();
-        // Increment the fullscreen counter
-        fullscreenCount++;
-        // Set the fullscreen counter text to the number of time the user has gone fullscreen
-        document.getElementById("fullscreenCounter").innerHTML = fullscreenCount;
-    }
-</script>
+
 </head>
 <body>
+    <!-- Div allowing for overlay to be built when image is clicked-->
+    <div id="imgOverlay"></div>
     <div class="navBar">
+        <img src="logo.webp" alt="" onclick="window.location.href = 'index.html'">
         <nav>
             <a href="index.html" style="background-color: #121212;">Home</a>
             <a href="projects.html">My Projects</a>
@@ -52,12 +40,7 @@
         <div class="idea">
             <h2 class="text">Website idea</h2>
             <p class="text">I would like to make an "about me" website with interactive menus, digital resume, and projects I am working on.</p>
-            <div class="inspiration">
-                <h2 class="text">Inspiration ideas:<br></h2>
-                <!-- Clickable inspiration screenshots that take the user to their original website in a new tab-->
-                <a href="https://www.danmachado.com/" target="_blank"><img src="dan.png" style="width:47vw; border: 4px dashed black" /></a>
-                <a href="https://briceclain.com/en/" target="_blank"><img src="Brice.png" style="width:47vw; border: 4px dashed black" /></a>
-            </div>
+            <div class="inspiration" id="inspiration"></div>
         </div>
         
         <!-- CSS media queries used to display only on small screens-->
@@ -67,5 +50,22 @@
         <h2 id="fullscreenCounterText" style="visibility: hidden;">You have viewed this page in fullscreen <span id="fullscreenCounter">0</span> times.</h2>
         <h2 id="screenSize">You have a small screen</h2>
     </div>
+    <script>
+        var fullscreenCount = 0;
+        var isClicked = false;
+        function fullScreen() {
+            if (isClicked == false) {
+               isClicked = true;
+               document.getElementById("fullscreenCounterText").style.visibility = "visible";
+            }
+            // Call JS event to make window fullscreen
+            document.documentElement.requestFullscreen();
+            // Increment the fullscreen counter
+            fullscreenCount++;
+            // Set the fullscreen counter text to the number of time the user has gone fullscreen
+            document.getElementById("fullscreenCounter").innerHTML = fullscreenCount;
+        }
+    </script>
+    <script src="proj5.js" defer></script>
 </body>
 </html>
