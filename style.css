@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-.text {
+.text, h3 {
     font-family: 'Courier New', Courier, monospace;
 }
 
