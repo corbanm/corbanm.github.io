@@ -4,16 +4,20 @@ form = document.getElementById("uploadForm");
 
 
 function submitForm(event) {
+    // prevent reload on form submission
     event.preventDefault();
+    // get elements from each form item
     var name = document.forms.uploadForm.name.value;
     var phone = document.forms.uploadForm.phone.value;
+    // get the first and only file from the file uploader
     var file = document.getElementById('file').files[0];
     let errorDiv = document.getElementById("errorDiv");
-
+    // validate forms using regex
     let nameValid = /^[a-zA-Z]+\ ?[a-zA-Z]*$/.test(name);
     let phoneValid = /^\(?[0-9]{3}\)?(\ |-)?[0-9]{3}(\ |-)?[0-9]{4}$/.test(phone);
-
+    // reset output html each time a file is submitted
     errorDiv.innerHTML = "";
+    // test for each validation and throw error if invalid
     try {
         if (!nameValid) throw "Name " + name + " is invalid";
         if (!phoneValid) throw "Phone number " + phone + " is invalid";
@@ -25,24 +29,32 @@ function submitForm(event) {
     }
 
     // file upload code
+    // show file name
     errorDiv.innerHTML += file.name + "\n";
-    
+    // create a file reader object
     var reader = new FileReader;
+    // when reader object is called, add the output to the output div
     reader.onload = function (e) {document.getElementById("errorDiv").innerHTML += e.target.result + "\n";};
-    
+    // read the file
     reader.readAsText(file);
     
 }
 
 function checkboxUpdate() {
+    // on checkbox update, show options in the console and website
     console.log(`Current alerts set: ${userOptions}`)
     document.getElementById("alertOutput").innerHTML = `<h4>Current alerts: ${userOptions}</h4>`
 }
 
+// each checkbox has the same code
+
 document.getElementById("loginAlert").addEventListener("change", function() {
+    // assume current option isn't in array
     var inArr = false;
+    // for each user option, check if the currently adjusted item is in the array
     for (var i = 0; i < userOptions.length; i++) {
         if (userOptions[i] === "loginAlert") {
+            // if the item is in the array, log index where it was found, set item to in the array, and remove it from the array
             console.log(`found at ${i}`);
             inArr = true;
             var firstHalf = userOptions.slice(0,i);
@@ -51,8 +63,10 @@ document.getElementById("loginAlert").addEventListener("change", function() {
         }
     }
     if (!inArr && this.checked) {
+        // if the item is not in the array, and is checked, push it to the array
         userOptions.push("loginAlert");
     }
+    // update the checkbox
     checkboxUpdate();
 
 })
