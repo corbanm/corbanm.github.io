@@ -14,7 +14,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">My Projects</a>
-            <a href="about.html">About Me</a>
+            <a href="upload.html">File Upload</a>
             <a href="agecalc.html">Age Calculator</a>
             <a href="contact.html" style="background-color: #121212;">Contact</a>
             <a href="gradecalc.html">Grade Calculator</a>
@@ -25,22 +25,24 @@
         <div id="errorText"></div>
         <form action="#submit" name="contact">
             <h3>Full Name:</h3>
-            <input required type="text" name="name" id="contactName" placeholder="John Smith" />
+            <input type="text" name="name" id="contactName" placeholder="John Smith" />
             <h3>Username:</h3>
-            <input required type="text" name="username" id="" placeholder="jsmith">
+            <input type="text" name="username" id="" placeholder="jsmith">
             <h3>Email:</h3>
-            <input required type="email" name="email" id="contactEmail" placeholder="someone@example.com" />
+            <input type="email" name="email" id="contactEmail" placeholder="someone@example.com" />
             <h3>Password:</h3>
-            <input required type="password" name="pass" id="" placeholder="xxxxxxxx">
+            <input type="password" name="pass" id="" placeholder="xxxxxxxx">
             <h3>Confirm Password:</h3>
-            <input required type="password" name="passConf" id="" placeholder="xxxxxxxx">
+            <input type="password" name="passConf" id="" placeholder="xxxxxxxx">
             <h3>Phone Number:</h3>
-            <input required type="text" name="phone" id="" placeholder="(123) 456-7890">
+            <input type="text" name="phone" id="" placeholder="(123) 456-7890">
             <h3>Date of Birth:</h3>
-            <input required type="date" name="dob" id="">
+            <input type="date" name="dob" id="">
             <h3>Agree to Terms:</h3>
-            <input required type="checkbox" name="terms" id="terms">
-            <br>
+            <input type="checkbox" name="terms" id="terms">
+
+            <h3>Sign up for email alerts</h3>
+            <div id="alertOutput"></div>
             <input required type="submit" id="contactSubmitButton" value="Submit"/>
         </form>
     </div>

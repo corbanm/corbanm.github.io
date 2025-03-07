@@ -1,6 +1,10 @@
 var dateOfBirth = new Date;
 
 function contactSubmit(event) {
+    var file = document.getElementById("fileUpload");
+    var fileOutput = document.getElementById("fileOutput");
+    fileOutput.innerText += file.name;
+
     // prevent page from reloading on form submission
     event.preventDefault();
     // assume form is valid unless changed
@@ -58,7 +62,8 @@ function contactSubmit(event) {
         errorDiv.innerHTML = "<h3>Welcome " + name + "!</h3>";
     }
 
-    
+   
+
 
     // alerting the user of their message being send using the alert event
     //alert("Message from: " + name + ". Email: " + email + ". Message contents: " + message + ". Sent");

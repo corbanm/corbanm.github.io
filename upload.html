@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="navBar">
+        <img src="logo.webp" alt="" onclick="window.location.href = 'index.html'">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">My Projects</a>
+            <a href="upload.html" style="background-color: #121212;">File Upload</a>
+            <a href="agecalc.html">Age Calculator</a>
+            <a href="contact.html">Contact</a>
+            <a href="gradecalc.html">Grade Calculator</a>
+        </nav>
+    </div>
+    <div class="content">
+        <h1 class="text">File upload</h1>
+        <form action="#submit" name="uploadForm" id="uploadForm">
+            <div id="errorDiv"></div>
+            <h3>Name</h3>
+            <h4 style="margin-top: 0px; padding-top: 0px;">Must be two alphanumeric strings</h4>
+            <input required type="text" name="name" id="name">
+            <h3>Phone</h3>
+            <h4 style="margin-top: 0px; padding-top: 0px;">Any US or Canadian phone number without country code</h4>
+            <input required type="text" name="phone" id="phone">
+            <h3>File</h3>
+            <input required type="file" name="file" id="file">
+            <input required type="submit" value="Upload" id="uploadSubmitButton">
+        </form>
+        <div id="alertOutput"></div>
+        <div style="display: flex; justify-content: center;">
+            <h4>Login alerts</h4>
+            <input type="checkbox" name="login" id="loginAlert">
+            <h4>Newsletter</h4>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <h4>Security alerts</h4>
+            <input type="checkbox" name="security" id="securityAlert">
+        </div>
+    </div>
+    <script src="proj7.js"></script>
+</body>
+</body>
+</html>
