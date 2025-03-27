@@ -6,22 +6,28 @@
     <link rel="stylesheet" href="navbar.css">
 
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    
+    <title>Task Management</title>
 </head>
 <body>
     <div class="navBar">
         <img src="logo.webp" alt="" onclick="window.location.href = 'index.html'">
         <nav>
             <a href="index.html">Home</a>
-            <a href="projects.html" style="background-color: #121212;">My Projects</a>
+            <a href="task.html" style="background-color: #121212;">Task Management</a>
             <a href="upload.html">File Upload</a>
             <a href="agecalc.html">Age Calculator</a>
             <a href="contact.html">Contact</a>
             <a href="gradecalc.html">Grade Calculator</a>
         </nav>
     </div>
-    <div class="content">
-        <h1 class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Facilis non at, praesentium dignissimos ab deserunt earum debitis, numquam sit, nihil quidem quam consequuntur rem unde veritatis hic sunt ad soluta.</h1>
-    </div>
+    <div class="content" id="taskContent">
+        <div class="tasks">
+            <h2>Current Tasks:</h2>
+            <ul id="taskList"></ul>
+            <button onclick="addTask()" id="addButton">Add Task</button>
+        </div>
+    <script src="objects.js"></script>
+    <script src="proj8.js"></script>
 </body>
 </html>
