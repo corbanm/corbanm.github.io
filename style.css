@@ -1,3 +1,21 @@
+@keyframes blurIn {
+    0% {
+        filter: blur(0);
+    }
+    100% {
+        filter: blur(5px);
+    }
+}
+
+@keyframes blurOut {
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0);
+    }
+}
+
 body {
     text-align: center;
     display: flex;
@@ -24,6 +42,7 @@ a {
 
 .idea img:hover {
     opacity: 70%;
+    cursor: pointer;
 }
 
 /* Only shows if smaller than 1200px */
@@ -98,4 +117,53 @@ li {
     margin: 0px;
     padding: 15px;
     border-radius: 15px 15px 0px 0px;
+}
+
+#theme {
+    color: white;
+    font-size: 50px;
+    right: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.customization {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.innerCustomization {
+    position: fixed;
+    width: 40vw;
+    height: 40vh;
+    background-color: white;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 25px;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+.innerCustomization h3 {
+    width: 100%;
+}
+
+.innerCustomization button {
+    margin:15px;
 }

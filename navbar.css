@@ -12,6 +12,7 @@
     height: 100px;
     background-color: #282828;
     border-radius: 10px;
+    z-index: 1;
 }
 
 nav a {
