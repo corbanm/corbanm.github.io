@@ -7,67 +7,14 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="navbar.css">
 
+
 </head>
 <body id="body">
-    <div class="customization" style="visibility: hidden;" id="customization">
-        <div class="innerCustomization">
-            <button id="close" onclick="themeOverlay()">✕</button>
-            <form action="index.html" method="get">
-                <h3>Background Color</h3>
-                <input required type="radio" name="bgColor" id="bgBlue" value="blue">
-                <label for="bgBlue">Blue</label>
-                <input required type="radio" name="bgColor" id="bgRed" value="red">
-                <label for="bgRed">Red</label>
-                <input required type="radio" name="bgColor" id="bgGreen" value="green">
-                <label for="bgGreen">Green</label>
-                <h3>Font Color</h3>
-                <input required type="radio" name="txtColor" id="txtBlue" value="blue">
-                <label for="txtBlue">Blue</label>
-                <input required type="radio" name="txtColor" id="txtRed" value="red">
-                <label for="txtRed">Red</label>
-                <input required type="radio" name="txtColor" id="txtGreen" value="green">
-                <label for="txtGreen">Green</label>
-                <h3>Font Size</h3>
-                <input required type="text" name="fontSize" id="fontSize">px<br>
-                <input required type="submit" value="Submit">
-            </form>
-            <button onclick="clearCookies()">Clear Cookies</button>
-            <!--
-            <h3>Background Color</h3>
-            <select name="bgColor" id="bgColor">
-                <option value="red">red</option>
-                <option value="green">green</option>
-                <option value="white">white</option>
-                <option value="gray">gray</option>
-              </select>
-              <button onclick="bgColorUpdate()">Set</button>
-            <h3>Text Color</h3>
-            <select name="textColor" id="textColor">
-                <option value="red">red</option>
-                <option value="green">green</option>
-                <option value="white">white</option>
-                <option value="black">black</option>
-              </select>
-              <button>Set</button>
-            <h3>Font Size</h3>
-            <input type="text">
-            <button>Set</button>-->
-        </div>
-    </div>
+    
     <!-- Div allowing for overlay to be built when image is clicked-->
     <div id="imgOverlay"></div>
-    <div class="navBar" id="navBar">
-        <img src="logo.webp" alt="" onclick="window.location.href = 'index.html'">
-        <nav>
-            <a href="index.html" style="background-color: #121212;">Home</a>
-            <a href="task.html">Task Management</a>
-            <a href="upload.html">File Upload</a>
-            <a href="agecalc.html">Age Calculator</a>
-            <a href="contact.html">Contact</a>
-            <a href="gradecalc.html">Grade Calculator</a>
-        </nav>
-        <button id="theme" onclick="themeOverlay()">⚙</button>
-    </div>
+    <div id="navBar"></div>
+    <br>
     <!-- Adding a divider for the name-->
     <div class="content" id="content">
         <div class="name">
@@ -111,5 +58,7 @@
     </script>
     <script src="proj5.js"></script>
     <script src="proj9.js" defer></script>
+    <script src="proj10.js" defer></script>
+    
 </body>
 </html>

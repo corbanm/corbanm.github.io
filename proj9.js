@@ -141,19 +141,19 @@ function clearCookies() {
 
 function themeOverlay() {
     var content = document.getElementById("content");
-    var navBar = document.getElementById("navBar");
+    //var navBar = document.getElementById("navBar");
     var customizeDiv = document.getElementById("customization");
     if (!isBlured){
         // if theme box is not open, make it visible and run the blur in animation
         content.setAttribute("style", "animation: 0.3s ease-in 0s blurIn; filter: blur(5px)");
-        navBar.setAttribute("style", "animation: 0.3s ease-in 0s blurIn; filter: blur(5px)");
+        //navBar.setAttribute("style", "animation: 0.3s ease-in 0s blurIn; filter: blur(5px)");
         customizeDiv.setAttribute("style", "visibility: visible; animation: 0.2s ease-out 0s blurOut");
         isBlured = true;
     }
     else {
         // if the theme box is open, make it invisible and blur out
         content.setAttribute("style", "animation: 0.3s ease-out 0s blurOut; filter: blur(0)");
-        navBar.setAttribute("style", "animation: 0.3s ease-out 0s blurOut; filter: blur(0)");
+        //navBar.setAttribute("style", "animation: 0.3s ease-out 0s blurOut; filter: blur(0)");
         customizeDiv.setAttribute("style", "animation: 0.2s ease-in 0s blurIn; visibility: hidden");
         isBlured = false;
     }

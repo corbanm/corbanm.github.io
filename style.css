@@ -92,9 +92,15 @@ li {
 
 }
 
-#taskContent {
+.taskContent {
     display: flex;
     justify-content: center;
+}
+
+#gameContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .task h3 {
@@ -119,7 +125,7 @@ li {
     border-radius: 15px 15px 0px 0px;
 }
 
-#theme {
+#navMoreButton {
     color: white;
     font-size: 50px;
     right: 30px;
@@ -127,6 +133,34 @@ li {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+#theme {
+    color: white;
+    font-size: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 25px;
+}
+
+#navMore {
+    top: 100px;
+    padding-top: 25px;
+    background-color: rgb(40, 40, 40);
+    right: 30px;
+    position: absolute;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#navMore a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat";
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
 }
 
 .customization {
@@ -166,4 +200,80 @@ li {
 
 .innerCustomization button {
     margin:15px;
+}
+
+#game img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.gamePiece {
+    border: 3px solid black;
+}
+
+#game {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+}
+
+#gamePos1 {
+    grid-area: a;
+}
+
+#gamePos2 {
+    grid-area: b;
+}
+
+#gamePos3 {
+    grid-area: c;
+}
+
+#gamePos4 {
+    grid-area: d;
+}
+
+#gamePos5 {
+    grid-area: e;
+}
+
+#gamePos6 {
+    grid-area: f;
+}
+
+#gamePos7 {
+    grid-area: g;
+}
+
+#gamePos8 {
+    grid-area: h;
+}
+
+#gamePos9 {
+    grid-area: i;
+}
+
+#shuffleButton {
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    border: 0px;
+    background-color: rgb(154, 154, 154);
+    border-radius: 10px;
+}
+
+#win {
+    position: fixed;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
 }

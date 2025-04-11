@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Game</title>
+</head>
+<body>
+    <div id="navBar">
+
+    </div>
+    <div class="content" id="gameContent">
+        <div id="game">
+            <div class="gamePiece" id="gamePos1">
+                <img src="puzzleImg/puzzle1.png" id="gameImg1" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos2">
+                <img src="puzzleImg/puzzle2.png" id="gameImg2" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos3">
+                <img src="puzzleImg/puzzle3.png" id="gameImg3" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos4">
+                <img src="puzzleImg/puzzle4.png" id="gameImg4" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos5">
+                <img src="puzzleImg/puzzle5.png" id="gameImg5" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos6">
+                <img src="puzzleImg/puzzle6.png" id="gameImg6" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos7">
+                <img src="puzzleImg/puzzle7.png" id="gameImg7" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos8">
+                <img src="puzzleImg/puzzle8.png" id="gameImg8" draggable="false" alt="">
+            </div>
+            <div class="gamePiece" id="gamePos9">
+                <img src="puzzleImg/puzzle9.png" id="gameImg9" draggable="false" alt="">
+            </div>
+        </div>
+        <button id="shuffleButton" onclick="shufflePieces()">Shuffle</button>
+        <h3 id="time">Time: 0</h3>
+        <h1 id="win" style="visibility: hidden;">You Win!</h1>
+    </div>
+        
+    <script src="objects.js"></script>
+    <script src="proj9.js" defer></script>
+    <script src="proj10.js" defer></script>
+</body>
+</html>
