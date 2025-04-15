@@ -277,3 +277,28 @@ li {
     padding: 10px;
     border-radius: 5px;
 }
+
+#verseOutput {
+    font-family: "UnifrakturMaguntia";
+    font-size: 30px;
+    padding: 0px 15vw 0px 15vw;
+}
+
+#lookupText {
+    font-family: "UnifrakturMaguntia";
+    font-size: 50px;
+    padding: 0px 15vw 0px 15vw;
+}
+
+#singleVerse, #wholeChapter {
+    background-color: darkgray;
+    margin: 0px 10vw 0px 10vw;
+    border-radius: 10px;
+    padding: 25px 0px 25px 0px;
+    margin-bottom: 50px;
+}
+
+#wholeChapterOutput {
+    text-align: left;
+    padding-left: 50px;
+}

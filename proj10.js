@@ -17,6 +17,7 @@ function navBarGen() {
         \n<a id="navFileUpload" href=\"upload.html\">File Upload</a>
         \n<a id="navContact" href=\"contact.html\">Contact</a>
         \n<a id="navGame" href=\"game.html\">Game</a>
+        \n<a id="navVerse" href="verseLookup.html">Verses</a>
     \n</nav>
 
     \n<button id="navMoreButton" onclick="showNavMore()">&#8801;</button>
