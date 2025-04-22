@@ -140,7 +140,7 @@ function clearCookies() {
 
 
 function themeOverlay() {
-    var content = document.getElementById("content");
+    var content = document.getElementsByClassName("content")[0];
     //var navBar = document.getElementById("navBar");
     var customizeDiv = document.getElementById("customization");
     if (!isBlured){

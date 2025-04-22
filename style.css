@@ -45,19 +45,7 @@ a {
     cursor: pointer;
 }
 
-/* Only shows if smaller than 1200px */
-@media only screen and (max-width: 1200px) {
-    #screenSize {
-        opacity: 255;
-    }
-}
 
-/* Only shows if larger than 1200px */
-@media only screen and (min-width: 1200px) {
-    #screenSize {
-        opacity: 0;
-    }
-}
 
 input, textarea {
     margin: 10px 0px 10px 0px;
@@ -138,29 +126,11 @@ li {
 #theme {
     color: white;
     font-size: 50px;
+    right: 30px;
+    position: absolute;
     background: none;
     border: none;
     cursor: pointer;
-    margin: 25px;
-}
-
-#navMore {
-    top: 100px;
-    padding-top: 25px;
-    background-color: rgb(40, 40, 40);
-    right: 30px;
-    position: absolute;
-    border-radius: 0px 0px 15px 15px;
-}
-
-#navMore a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat";
-    padding: 25px;
-    border-radius: 10px;
-    margin: 10px;
-    margin-bottom: 200px;
 }
 
 .customization {
@@ -302,3 +272,4 @@ li {
     text-align: left;
     padding-left: 50px;
 }
+

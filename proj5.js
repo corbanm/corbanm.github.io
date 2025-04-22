@@ -1,5 +1,5 @@
 // when document is loaded, create the images on the homepage
-document.addEventListener("load", createImages());
+//document.addEventListener("load", createImages());
 
 function createImages() {
     // choose where to insert the images
