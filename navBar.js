@@ -1,4 +1,4 @@
-// New dynamic navbar code
+// New dynamic navbar code 
 function navBarGen() {
     let div = document.getElementById("navBar");
     var gear = "⚙";
