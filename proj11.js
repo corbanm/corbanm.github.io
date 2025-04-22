@@ -49,6 +49,7 @@ function getChapter() {
     xhr.responseText = 'json';
     // base url for api
     const url = "https://bible-api.com/";
+    console.log(document.getElementById("wholeChapterBook").value);
     // request starting with the base url and adding the book and chapter inputted by the user
     let req = `${url}${document.getElementById("wholeChapterBook").value}+${document.getElementById("wholeChapterChapter").value}`
     //console.log(req);
